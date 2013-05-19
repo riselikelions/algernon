@@ -1,3 +1,8 @@
+.DS_Store
+.bowercc
+.editorconfig
+.gitattributes
+.jshintrc
 lib-cov
 *.seed
 *.log
