@@ -13,6 +13,7 @@ lib-cov
 *.gz
 */**/.sass
 
+node_modules
 pids
 logs
 results
