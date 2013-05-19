@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Algernon</title>
+  	<link href="/css/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="row">
+		<div class="small-8 columns small-centered intro">
+			<h1>Algernon</h1>
+			<p>An <a href="http://theanarchistlibrary.org/" target="_blank" title="The Anarchist Library">Anarchist Library</a> Reader.</p>
+		
+			<form method="POST" action="/library/" id="read">
+				<div class="row">
+					<div class="small-12 columns">
+						<input type="url" name="url" id="url" required pattern="https?://theanarchistlibrary.org/library/.+" placeholder="http://theanarchistlibrary.org/library/zo-d-axa-the-honest-worker">
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 columns">
+						<input type="submit" id="submit" name="submit" value="Read Text">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-4 columns small-centered about">
+				<small>
+					<p>This site makes use of <a href="https://typekit.com/" title="Typekit">Typekit</a> fonts.</p>
+					<p>A script blocker for your browser will be necessary if it's a concern.</p>
+					<p>Thanks to <a href="http://theanarchistlibrary.org/" title="The Anarchist Library">The Anarchist Library</a> for being such a great resource.</p>
+				</small>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-4 columns small-centered about">
+				<small>
+					<h5 class="subheader">A <a href="http://riselikelions.net">Rise Like Lions</a> Project</h5></p>
+				</small>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

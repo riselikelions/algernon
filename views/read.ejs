@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Algernon</title>
+  <link href="/css/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="//use.typekit.net/rjh8out.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+  <div class="row">
+    <div class="small-10 small-centered columns">
+	<div class="fixed">
+		<div class="contain-to-grid">
+			<nav class="top-bar">
+	  			<ul class="title-area">
+				    <li class="name">
+				      <h1><a href="/">Algernon</a></h1>
+				    </li>
+				</ul>
+				<section class="top-bar-section">
+					<ul>
+						<li class="has-form small-5">
+							<form action="/library/" method="POST" id="read">
+								<input placeholder="paste url and press enter..." type="url" name="url" id="url" required pattern="https?://theanarchistlibrary.org/library/.+">
+							</form>
+						</li>
+		        <li class="small-5">
+              <ul class="button-group round">
+                <li><a href="http://theanarchistlibrary.org/library/<%= url %>?edit" class="button" target="_blank">Edit Library Copy</a></li>
+                <li><a href="http://theanarchistlibrary.org/library/<%= url %>" class="button" target="_blank">View Library Copy</a></li>
+              </ul>
+            </li>
+          </ul>
+				</section>
+	  		</nav>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="row">
+		<div class="small-10 small-centered columns">
+			<%- text %>
+		</div>
+	</div>
+</body>
+</html>

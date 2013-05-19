@@ -1,0 +1,95 @@
+@import "compass/css3";
+
+html, body {
+	color: #2D2D2D;
+	background: white;
+	font-family: "kepler-std", Georgia;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "ltc-bodoni-175", "Times New Roman", Times;
+	color: #2D2D2D;
+	font-weight:400;
+}
+
+#pagemaintitle {
+	h2 {
+		font-style: italic;
+		font-size: 1.2em;
+	}
+	h1 {
+		border-top:1px solid silver;
+		border-bottom:1px solid silver;
+	}
+}
+
+.intro {
+	text-align:center;
+}
+
+.about {
+	text-align:center;
+	margin-top: emCalc(20px);
+	#about-content {
+		text-align:left;
+		font-size:emCalc(12px);
+	}
+}
+
+.panel {
+	background: #E4E4E4;
+	border: 1px solid darken(#E4E4E4, 10%);
+}
+
+.tocprefix {
+	display:none;
+}
+
+.top-bar {
+	h1 { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;}
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  // ul.left {
+  //   width: emCalc(250px);
+  // }
+}
+
+div#pagemaintitle {
+	margin-top: emCalc(60px);
+}
+
+div#tableofcontents {
+	border-bottom:1px solid silver;
+	margin-bottom: emCalc(50px);
+}
+
+p.tableofcontentline {
+	margin-bottom: emCalc(10px);
+}
+
+#thework {
+	margin-top: emCalc(25px);
+	&:before {
+    height:75px;
+    display:block;
+		content: "\2766";
+		font-size: 200%;
+		margin:0 49%;
+		color: #5A0007;
+	}
+	&:after {
+		content: "\2766"; /* Here comes the ivy leaf */
+		font-size: 200%; /* Makes the leaf larger than the normal text */
+		margin:0 49%; /* Leaf won't clash with the last letter of the text */
+		top: emCalc(15px); /*Vertical distance from the last line of text */
+		padding-bottom: emCalc(30px);
+	}
+}
+
+h3[id*='toc'] {
+  &:before {
+    display:block; 
+    content:""; 
+    height:75px; 
+    margin:-75px 0 0; 
+  }
+}
