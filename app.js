@@ -82,7 +82,7 @@ app.post('/library/', function(req, res) {
 	res.redirect(redir);
 });
 
-//app.get('*', function(req, res){
-//	res.send(404);
-//});
+app.get('*', function(req, res){
+	res.redirect('/');
+});
 app.listen(conf.http.port);

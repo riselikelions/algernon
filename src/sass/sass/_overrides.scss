@@ -85,7 +85,7 @@ p.tableofcontentline {
 	}
 }
 
-h3[id*='toc'] {
+h3[id*='toc'], h4[id*='toc'] {
   &:before {
     display:block; 
     content:""; 
